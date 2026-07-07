@@ -2,12 +2,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person p0 = new Person("Person", "P001");
-        Person p1 = new Student("Davron", "S001");
-        Person p2 = new Lecturer("Ali", "L001");
+        WashingMachine wm = new WashingMachine("LG");
+        Refrigerator rf = new Refrigerator("Panasonic");
 
-        p0.introduce();
-        p1.introduce();
-        p2.introduce();
+        wm.displayBrand();
+        wm.turnOn();
+        wm.operate();
+        wm.turnOff();
+
+        System.out.println();
+
+        rf.displayBrand();
+        rf.turnOn();
+        rf.operate();
+        rf.turnOff();
     }
 }
